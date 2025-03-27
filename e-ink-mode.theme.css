@@ -1,0 +1,55 @@
+/**
+ * @name E-Ink Mode
+ * @description A grayscale, high-contrast theme resembling an e-ink display
+ * @version 1.0
+ * @author ChatGPT
+ */
+
+ :root {
+    --background-primary: #f2f2f2;
+    --background-secondary: #e6e6e6;
+    --background-secondary-alt: #d9d9d9;
+    --background-tertiary: #cccccc;
+    --channeltextarea-background: #ffffff;
+    --background-accent: #bfbfbf;
+  
+    --header-primary: #111111;
+    --header-secondary: #333333;
+    --text-normal: #111111;
+    --text-muted: #666666;
+    --text-link: #000000;
+  
+    --interactive-normal: #333333;
+    --interactive-hover: #111111;
+    --interactive-active: #000000;
+    --interactive-muted: #999999;
+  
+    --scrollbar-thin-thumb: #999999;
+    --scrollbar-thin-track: #f2f2f2;
+  
+    --brand-experiment: #444444;
+    --status-positive: #666666;
+    --status-warning: #666666;
+    --status-danger: #666666;
+    --status-speaking: #000000;
+  }
+  
+  .theme-dark, .theme-light {
+    background-color: var(--background-primary) !important;
+    color: var(--text-normal) !important;
+  }
+  
+  img, video, canvas {
+    filter: grayscale(100%) contrast(1.2);
+  }
+  
+  code, pre {
+    background-color: var(--background-secondary);
+    color: var(--header-primary);
+  }
+  
+  a {
+    color: var(--text-link);
+    text-decoration: underline;
+  }
+  
